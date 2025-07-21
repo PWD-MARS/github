@@ -1,0 +1,22 @@
+---
+title: "Getting Started with GitHub"
+author: "Jon Bryant"
+format: 
+  revealjs:
+    footer: "[https://github.com/PWD-MARS/github](https://github.com/PWD-MARS/github)"
+editor: visual
+---
+
+## Agenda
+
+-   Why Git/GitHub?
+
+-   The Whole Process
+
+-   Commits
+
+-   Pull/Push
+
+-   Branches
+
+-   Next Steps
