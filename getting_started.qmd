@@ -4,6 +4,7 @@ author: "Jon Bryant"
 format: 
   revealjs:
     footer: "[https://github.com/PWD-MARS/github](https://github.com/PWD-MARS/github)"
+    auto-stretch: false
 editor: visual
 ---
 
@@ -11,7 +12,9 @@ editor: visual
 
 -   Why Git/GitHub?
 
--   The Whole Process
+-   Git Basics
+
+-   Repositories
 
 -   Commits
 
@@ -23,4 +26,88 @@ editor: visual
 
 ## Why Git/GitHub
 
-We have been saving text-based documents with tracked changes for years, why do we need something different for code?
+We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?
+
+![](images/track_changes.png){fig-align="center" width="535"}
+
+## Why Git/GitHub
+
+We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?
+
+-   Changes in one line of code can drastically impact other areas in non-obvious ways.
+
+-   We generally prototype portions of our code without impacting what is already working in production.
+
+-   We need more than one person to be able to work on a document at once.
+
+## Mostly we want to avoid
+
+::: {layout="[[-1], [1], [-1]]"}
+![](images/multiple_analysis_files.png){fig-align="center" width="600"}
+:::
+
+## Git
+
+![](images/clipboard-766901085.png){fig-align="center" width="207"}
+
+-   Open source software for managing software projects
+
+-   Very low level - Only available through CLI (i.e. Terminal)
+
+-   Tracks changes to files
+
+## GitHub
+
+![](images/clipboard-251232700.png){fig-align="center"}
+
+-   Web-based platform built on top of Git with an easier to use interface, collaboration and issue tracking system, etc.
+
+-   Free service with enterprise-level paid options
+
+-   A single source of truth
+
+## Git Basics
+
+There's a few key concepts that are important for being successful with Git:
+
+-   Repository - A centralized folder/directory where all of your code lives for a given project and is tracked by Git.
+
+-   Commit - A snapshot of all the files in the repository.
+
+-   Pull - Pull changes from the server (remote)
+
+-   Push - Push changes (the commit) to the server (remote)
+
+## Repo(sitory)
+
+Repos are a folder/directory that is being tracked by Git.
+
+-   I would suggest creating the repo first in GitHub and then cloning it locally.
+
+    -   Cloning makes a local copy of the repo.
+
+<!-- -->
+
+-   While you can go from existing project to GitHub, it's more work so I generally don't suggest it.
+
+## Repo - Create
+
+I recommend creating private repos as public are generally accessible to..well, the public.
+
+Until you're comfortable using GitHub, you don't want to accidentally publish credential or something sensitive.
+
+![](images/clipboard-3455376126.png){fig-align="center" width="512"}
+
+## Repo - Clone
+
+Click on the Code button to copy the repo's URL
+
+![](images/clipboard-3156903877.png)
+
+## Repo - Create using Version Control
+
+For RStudio users, I recommend creating a new project using Version Control. We only have to do this once per repo (per machine).
+
+![](images/clipboard-1994404392.png){fig-align="center" width="523"}
+
+# Demo
