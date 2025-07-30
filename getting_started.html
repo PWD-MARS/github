@@ -146,6 +146,7 @@ Jon Bryant
 <li><p>Workflow</p></li>
 <li><p>Branches</p></li>
 <li><p>Next Steps</p></li>
+<li><p>Resources</p></li>
 </ul>
 </section>
 <section id="why-gitgithub" class="slide level2">
@@ -216,13 +217,27 @@ Jon Bryant
 </section>
 <section id="git-basics" class="slide level2">
 <h2>Git Basics</h2>
+<div style="font-size: 0.8em;">
 <p>There’s a few key concepts that are important for being successful with Git:</p>
-<ul>
-<li><p>Repository - A centralized folder/directory where all of your code lives for a given project and is tracked by Git.</p></li>
-<li><p>Commit - A snapshot of all the files in the repository.</p></li>
-<li><p>Pull - Pull changes from the server (remote)</p></li>
-<li><p>Push - Push changes (the commit) to the server (remote)</p></li>
-</ul>
+<dl>
+<dt>Repository</dt>
+<dd>
+<p>A centralized folder/directory where all of your code lives for a given project and is tracked by Git.</p>
+</dd>
+<dt>Commit</dt>
+<dd>
+<p>A snapshot of all the files in a repository</p>
+</dd>
+<dt>Pull</dt>
+<dd>
+<p>Pull Changes from the server (remote)</p>
+</dd>
+<dt>Push</dt>
+<dd>
+<p>Push changes (the commit) to the server (remote)</p>
+</dd>
+</dl>
+</div>
 </section>
 <section id="repository" class="slide level2">
 <h2>Repo(sitory)</h2>
@@ -237,13 +252,12 @@ Jon Bryant
 </section>
 <section id="repo---create" class="slide level2">
 <h2>Repo - Create</h2>
-<p>I recommend creating private repos as public are generally accessible to..well, the public.</p>
-<p>Until you’re comfortable using GitHub, you don’t want to accidentally publish credential or something sensitive.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/clipboard-3455376126.png" class="quarto-figure quarto-figure-center" width="512"></p>
 </figure>
 </div>
+<p>I recommend creating private repos to start with as public are generally accessible to…well, the public.</p>
 </section>
 <section id="repo---clone" class="slide level2">
 <h2>Repo - Clone</h2>
@@ -273,13 +287,17 @@ Jon Bryant
 <li><span style="font-size: 0.8em;">There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it’s worth it to capture that snapshot in time.</span></li>
 </ul>
 </section>
-<section id="the-commit" class="slide level2">
-<h2>The commit</h2>
+<section id="commit---changes" class="slide level2">
+<h2>Commit - Changes</h2>
 <p><img data-src="images/clipboard-2649705665.png"></p>
 </section>
-<section id="the-commit-1" class="slide level2">
-<h2>The commit</h2>
-<p><img data-src="images/clipboard-2219444449.png"></p>
+<section id="commit---ui" class="slide level2">
+<h2>Commit - UI</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-2219444449.png" class="quarto-figure quarto-figure-center" width="700"></p>
+</figure>
+</div>
 </section>
 <section id="commit---message" class="slide level2">
 <h2>Commit - Message</h2>
@@ -292,6 +310,36 @@ Jon Bryant
 <li><p>First line &lt;50 characters, followed by a space, then additional details if necessary</p></li>
 <li><p>If you’re writing a lot then the commit is too big/infrequent, too verbose, or some of the details should live elsewhere (comments, issues, etc).</p></li>
 </ul>
+</section>
+<section id="not-all-files-should-be-tracked" class="slide level2">
+<h2>Not all files should be tracked</h2>
+<p>Sometimes, there are files within a directory that we don’t want git to track:</p>
+<ul>
+<li><p>Large files</p></li>
+<li><p>Sensitive files</p></li>
+<li><p>R Package related files</p></li>
+</ul>
+</section>
+<section id="gitignore" class="slide level2">
+<h2><code>.gitignore</code></h2>
+<div style="font-size: 0.8em;">
+<p>When we create a new project in RStudio using version control (in our case GitHub), it automatically creates a <code>.gitignore</code> file with a few key files that don’t need to be tracked by git.</p>
+<p>You add files to git ignore manually or most IDEs will have a UI interface to add them to <code>.gitignore</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-202858703.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</section>
+<section id="gitignore-example" class="slide level2">
+<h2><code>.gitignore</code> example</h2>
+<p>These files won’t be tracked by Git nor will they show up in GitHub</p>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/gitignore_ex.png" class="quarto-figure quarto-figure-center" width="412"></p>
+</figure>
+</div>
 
 </section></section>
     </div>

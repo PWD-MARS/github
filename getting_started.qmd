@@ -20,6 +20,8 @@ editor: visual
 
 -   Next Steps
 
+-   Resources
+
 ## Why Git/GitHub
 
 We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?
@@ -64,15 +66,25 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 ## Git Basics
 
+::: {style="font-size: 0.8em;"}
 There's a few key concepts that are important for being successful with Git:
 
--   Repository - A centralized folder/directory where all of your code lives for a given project and is tracked by Git.
+Repository
 
--   Commit - A snapshot of all the files in the repository.
+:   A centralized folder/directory where all of your code lives for a given project and is tracked by Git.
 
--   Pull - Pull changes from the server (remote)
+Commit
 
--   Push - Push changes (the commit) to the server (remote)
+:   A snapshot of all the files in a repository
+
+Pull
+
+:   Pull Changes from the server (remote)
+
+Push
+
+:   Push changes (the commit) to the server (remote)
+:::
 
 ## Repo(sitory)
 
@@ -86,11 +98,9 @@ Repos are a folder/directory that is being tracked by Git.
 
 ## Repo - Create
 
-I recommend creating private repos as public are generally accessible to..well, the public.
-
-Until you're comfortable using GitHub, you don't want to accidentally publish credential or something sensitive.
-
 ![](images/clipboard-3455376126.png){fig-align="center" width="512"}
+
+I recommend creating private repos to start with as public are generally accessible to...well, the public.
 
 ## Repo - Clone
 
@@ -114,13 +124,13 @@ After we make changes to files located in a repo that Git is tracking, we can co
 -   [We want to make commits around logical units of change as they should tell a story of how the files have changed.]{style="font-size: 0.8em;"}
 -   [There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it's worth it to capture that snapshot in time.]{style="font-size: 0.8em;"}
 
-## The commit
+## Commit - Changes
 
 ![](images/clipboard-2649705665.png)
 
-## The commit
+## Commit - UI
 
-![](images/clipboard-2219444449.png)
+![](images/clipboard-2219444449.png){fig-align="center" width="700"}
 
 ## Commit - Message
 
@@ -129,3 +139,29 @@ After we make changes to files located in a repo that Git is tracking, we can co
 -   First line \<50 characters, followed by a space, then additional details if necessary
 
 -   If you're writing a lot then the commit is too big/infrequent, too verbose, or some of the details should live elsewhere (comments, issues, etc).
+
+## Not all files should be tracked
+
+Sometimes, there are files within a directory that we don't want git to track:
+
+-   Large files
+
+-   Sensitive files
+
+-   R Package related files
+
+## `.gitignore`
+
+::: {style="font-size: 0.8em;"}
+When we create a new project in RStudio using version control (in our case GitHub), it automatically creates a `.gitignore` file with a few key files that don't need to be tracked by git.
+
+You add files to git ignore manually or most IDEs will have a UI interface to add them to `.gitignore`
+
+![](images/clipboard-202858703.png){fig-align="center"}
+:::
+
+## `.gitignore` example
+
+These files won't be tracked by Git nor will they show up in GitHub
+
+![](images/gitignore_ex.png){fig-align="center" width="412"}
