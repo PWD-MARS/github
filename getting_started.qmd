@@ -16,8 +16,6 @@ editor: visual
 
 -   Workflow
 
--   Branches
-
 -   Next Steps
 
 -   Resources
@@ -206,6 +204,30 @@ If Farshad's fix for Bug B changes the code enough that it now conflicts with co
 
 # Demo
 
+## What we covered today
+
+-   Why Git/GitHub
+
+-   Basics of Git
+
+-   End to End workflow
+
+# Next Time
+
+## Issues
+
+GitHub issues are a great way of keeping track of new features, bugs, and other tasks associated to our projects
+
+-   Space to add more context to the code that is index-able for others and our future selves
+
+-   Assign to individuals, tag, etc
+
+-   Link issues to commit
+
+## 
+
+![](images/gh_issues.PNG){fig-align="center" width="850"}
+
 ## Branches
 
 ::: {layout="[[-0.5], [0.5], [-0.5]]"}
@@ -213,3 +235,30 @@ If Farshad's fix for Bug B changes the code enough that it now conflicts with co
 :::
 
 ## Branches
+
+Git hub is all about branches. We have haven't discussed it yet but so far we've been working only in the repo's `main` branch. When working on a feature or bug, we can create a branch and then merge it back to main when we're done
+
+![](images/clipboard-108549352.png){fig-align="center" width="592"}
+
+## Projects
+
+Projects are based on Issues, which makes it easier to manage our work
+
+![](images/clipboard-1285900026.png){fig-align="center" width="700"}
+
+## Pages
+
+![](images/clipboard-3740672826.png){fig-align="center" width="825"}
+
+## Resources
+::: {layout="[[-0.5], [0.5], [-0.5]]"}
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/ "GitHub + RStudio")
+
+-   [GitHub Learning Pathways](https://resources.github.com/learn/pathways/)
+
+-   [Git Pro book (free)](https://git-scm.com/book/en/v2)
+
+-   [Google](www.google.com)
+
+-   [MARS team](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+:::
