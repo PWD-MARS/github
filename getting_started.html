@@ -230,11 +230,11 @@ Jon Bryant
 </dd>
 <dt>Pull</dt>
 <dd>
-<p>Pull Changes from the server (remote)</p>
+<p>Pull changes from the server (remote) that are missing locally.</p>
 </dd>
 <dt>Push</dt>
 <dd>
-<p>Push changes (the commit) to the server (remote)</p>
+<p>Push changes (the commit) that exist locally but not on the server (remote)</p>
 </dd>
 </dl>
 </div>
@@ -340,6 +340,92 @@ Jon Bryant
 <p><img data-src="images/gitignore_ex.png" class="quarto-figure quarto-figure-center" width="412"></p>
 </figure>
 </div>
+</section>
+<section id="pullpush" class="slide level2">
+<h2>Pull/Push</h2>
+<p>People usually say “Push/Pull”, but I’m being very specific in ordering it as Pull/Push. We always want to pull before we push.</p>
+<p>As a reminder:</p>
+<dl>
+<dt>Push</dt>
+<dd>
+<p>Pull changes from the server (remote) that are missing locally.</p>
+</dd>
+<dt>Push</dt>
+<dd>
+<p>Push changes (the commit) that exist locally but not on the server (remote)</p>
+</dd>
+</dl>
+</section>
+<section id="why-pull-before-push" class="slide level2">
+<h2>Why Pull before Push?</h2>
+<p>What happens in the following scenario:</p>
+<ol type="1">
+<li>I clone a repo to work on Feature A</li>
+<li>I start working on Feature A</li>
+<li>Farshad clones the repo to fix Bug B</li>
+<li>Farshad is a coding wizard and pushes the fix for Bug B the same day</li>
+<li>Two days later I finish Feature A and want to push it to the remote.</li>
+</ol>
+</section>
+<section id="merge-conflict" class="slide level2">
+<h2>Merge conflict</h2>
+<p>If Farshad’s fix for Bug B changes the code enough that it now conflicts with code of my new feature, if I try to push it to the remote, I will get denied because of conflicts.</p>
+<ul>
+<li><p>This means I need to go back, pull the changes from the remote, make sure my code works properly still for Feature A, and then push it to the remote.</p></li>
+<li><p>This doesn’t necessarily happen often but it’s always a best practice to avoid this by just pulling before pushing.</p></li>
+</ul>
+</section>
+<section id="pullpush-1" class="slide level2">
+<h2>Pull/Push</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[-1], [1], [-1]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/BZiqzTQzYw.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="demo-1" class="title-slide slide level1 center">
+<h1>Demo</h1>
+
+</section>
+<section id="branches" class="slide level2">
+<h2>Branches</h2>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout="[[-0.5], [0.5], [-0.5]]">
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-1712853929.png" class="quarto-figure quarto-figure-center" width="743"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="branches-1" class="slide level2">
+<h2>Branches</h2>
 
 </section></section>
     </div>
