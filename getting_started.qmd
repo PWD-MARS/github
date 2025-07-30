@@ -14,11 +14,7 @@ editor: visual
 
 -   Git Basics
 
--   Repositories
-
--   Commits
-
--   Pull/Push
+-   Workflow
 
 -   Branches
 
@@ -32,11 +28,11 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 ## Why Git/GitHub
 
-We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?
-
 -   Changes in one line of code can drastically impact other areas in non-obvious ways.
 
 -   We generally prototype portions of our code without impacting what is already working in production.
+
+-   We want to have a historical record of changes to provide insight for others and our future selves.
 
 -   We need more than one person to be able to work on a document at once.
 
@@ -86,8 +82,6 @@ Repos are a folder/directory that is being tracked by Git.
 
     -   Cloning makes a local copy of the repo.
 
-<!-- -->
-
 -   While you can go from existing project to GitHub, it's more work so I generally don't suggest it.
 
 ## Repo - Create
@@ -111,3 +105,27 @@ For RStudio users, I recommend creating a new project using Version Control. We 
 ![](images/clipboard-1994404392.png){fig-align="center" width="523"}
 
 # Demo
+
+## Commit
+
+After we make changes to files located in a repo that Git is tracking, we can commit those changes.
+
+-   [A commit is a snapshot of everything in the local repo that has changed since the last commit.]{style="font-size: 0.8em;"}
+-   [We want to make commits around logical units of change as they should tell a story of how the files have changed.]{style="font-size: 0.8em;"}
+-   [There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it's worth it to capture that snapshot in time.]{style="font-size: 0.8em;"}
+
+## The commit
+
+![](images/clipboard-2649705665.png)
+
+## The commit
+
+![](images/clipboard-2219444449.png)
+
+## Commit - Message
+
+![](images/clipboard-785770512.png){fig-align="center" width="357"}
+
+-   First line \<50 characters, followed by a space, then additional details if necessary
+
+-   If you're writing a lot then the commit is too big/infrequent, too verbose, or some of the details should live elsewhere (comments, issues, etc).

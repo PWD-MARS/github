@@ -143,9 +143,7 @@ Jon Bryant
 <ul>
 <li><p>Why Git/GitHub?</p></li>
 <li><p>Git Basics</p></li>
-<li><p>Repositories</p></li>
-<li><p>Commits</p></li>
-<li><p>Pull/Push</p></li>
+<li><p>Workflow</p></li>
 <li><p>Branches</p></li>
 <li><p>Next Steps</p></li>
 </ul>
@@ -161,10 +159,10 @@ Jon Bryant
 </section>
 <section id="why-gitgithub-1" class="slide level2">
 <h2>Why Git/GitHub</h2>
-<p>We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?</p>
 <ul>
 <li><p>Changes in one line of code can drastically impact other areas in non-obvious ways.</p></li>
 <li><p>We generally prototype portions of our code without impacting what is already working in production.</p></li>
+<li><p>We want to have a historical record of changes to provide insight for others and our future selves.</p></li>
 <li><p>We need more than one person to be able to work on a document at once.</p></li>
 </ul>
 </section>
@@ -234,10 +232,7 @@ Jon Bryant
 <ul>
 <li>Cloning makes a local copy of the repo.</li>
 </ul></li>
-</ul>
-<!-- -->
-<ul>
-<li>While you can go from existing project to GitHub, it’s more work so I generally don’t suggest it.</li>
+<li><p>While you can go from existing project to GitHub, it’s more work so I generally don’t suggest it.</p></li>
 </ul>
 </section>
 <section id="repo---create" class="slide level2">
@@ -264,10 +259,41 @@ Jon Bryant
 </figure>
 </div>
 </section>
+<section>
 <section id="demo" class="title-slide slide level1 center">
 <h1>Demo</h1>
 
 </section>
+<section id="commit" class="slide level2">
+<h2>Commit</h2>
+<p>After we make changes to files located in a repo that Git is tracking, we can commit those changes.</p>
+<ul>
+<li><span style="font-size: 0.8em;">A commit is a snapshot of everything in the local repo that has changed since the last commit.</span></li>
+<li><span style="font-size: 0.8em;">We want to make commits around logical units of change as they should tell a story of how the files have changed.</span></li>
+<li><span style="font-size: 0.8em;">There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it’s worth it to capture that snapshot in time.</span></li>
+</ul>
+</section>
+<section id="the-commit" class="slide level2">
+<h2>The commit</h2>
+<p><img data-src="images/clipboard-2649705665.png"></p>
+</section>
+<section id="the-commit-1" class="slide level2">
+<h2>The commit</h2>
+<p><img data-src="images/clipboard-2219444449.png"></p>
+</section>
+<section id="commit---message" class="slide level2">
+<h2>Commit - Message</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-785770512.png" class="quarto-figure quarto-figure-center" width="357"></p>
+</figure>
+</div>
+<ul>
+<li><p>First line &lt;50 characters, followed by a space, then additional details if necessary</p></li>
+<li><p>If you’re writing a lot then the commit is too big/infrequent, too verbose, or some of the details should live elsewhere (comments, issues, etc).</p></li>
+</ul>
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
