@@ -5,6 +5,7 @@ format:
   revealjs:
     footer: "[https://github.com/PWD-MARS/github](https://github.com/PWD-MARS/github)"
     auto-stretch: false
+    embed-resources: true
 editor: visual
 ---
 
