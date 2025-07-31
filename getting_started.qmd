@@ -28,13 +28,15 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 ## Why Git/GitHub
 
+::: incremental
 -   Changes in one line of code can drastically impact other areas in non-obvious ways.
-
--   We generally prototype portions of our code without impacting what is already working in production.
 
 -   We want to have a historical record of changes to provide insight for others and our future selves.
 
+-   We generally prototype portions of our code without impacting what is already working in production.
+
 -   We need more than one person to be able to work on a document at once.
+:::
 
 ## Mostly we want to avoid
 
@@ -50,7 +52,7 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 -   Very low level - Only available through CLI (i.e. Terminal)
 
--   Tracks changes to files
+-   Provide core functions (tracking changes, commits, pull/push, etc)
 
 ## GitHub
 
@@ -58,7 +60,7 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 -   Web-based platform built on top of Git with an easier to use interface, collaboration and issue tracking system, etc.
 
--   Free service with enterprise-level paid options
+-   Widely used across the industry
 
 -   A single source of truth
 
@@ -119,7 +121,7 @@ For RStudio users, I recommend creating a new project using Version Control. We 
 After we make changes to files located in a repo that Git is tracking, we can commit those changes.
 
 -   [A commit is a snapshot of everything in the local repo that has changed since the last commit.]{style="font-size: 0.8em;"}
--   [We want to make commits around logical units of change as they should tell a story of how the files have changed.]{style="font-size: 0.8em;"}
+-   [We want to make commits around logical units of change as they should tell a story of how the project has developed.]{style="font-size: 0.8em;"}
 -   [There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it's worth it to capture that snapshot in time.]{style="font-size: 0.8em;"}
 
 ## Commit - Changes
@@ -146,7 +148,7 @@ Sometimes, there are files within a directory that we don't want git to track:
 
 -   Sensitive files
 
--   R Package related files
+-   Package/Library-related files
 
 ## `.gitignore`
 
@@ -170,7 +172,7 @@ People usually say "Push/Pull", but I'm being very specific in ordering it as Pu
 
 As a reminder:
 
-Push
+Pull
 
 :   Pull changes from the server (remote) that are missing locally.
 
@@ -182,19 +184,22 @@ Push
 
 What happens in the following scenario:
 
-1.  I clone a repo to work on Feature A
-2.  I start working on Feature A
-3.  Farshad clones the repo to fix Bug B
-4.  Farshad is a coding wizard and pushes the fix for Bug B the same day
-5.  Two days later I finish Feature A and want to push it to the remote.
+::: incremental
+1.  Jon clones a repo to work on Feature A
+2.  Farshad clones the repo to fix Bug B
+3.  Farshad is a coding wizard and pushes the fix for Bug B the same day
+4.  Two days later, Jon finish Feature A and want to push it to the remote.
+:::
 
 ## Merge conflict
 
+::: incremental
 If Farshad's fix for Bug B changes the code enough that it now conflicts with code of my new feature, if I try to push it to the remote, I will get denied because of conflicts.
 
 -   This means I need to go back, pull the changes from the remote, make sure my code works properly still for Feature A, and then push it to the remote.
 
 -   This doesn't necessarily happen often but it's always a best practice to avoid this by just pulling before pushing.
+:::
 
 ## Pull/Push
 
@@ -206,11 +211,19 @@ If Farshad's fix for Bug B changes the code enough that it now conflicts with co
 
 ## What we covered today
 
+::: center
 -   Why Git/GitHub
 
 -   Basics of Git
 
--   End to End workflow
+-   The complete workflow from start to finish
+
+    -   Create/Clone Repositories
+
+    -   Commits
+
+    -   Pull/Push
+:::
 
 # Next Time
 
@@ -228,6 +241,14 @@ GitHub issues are a great way of keeping track of new features, bugs, and other 
 
 ![](images/gh_issues.PNG){fig-align="center" width="850"}
 
+## Issues
+
+::: {style="font-size: 0.8em;"}
+In the process of creating this presentation, I created an issue for the Posit/Quarto team:
+:::
+
+![](images/clipboard-3137073766.png){fig-align="center" width="800"}
+
 ## Branches
 
 ::: {layout="[[-0.5], [0.5], [-0.5]]"}
@@ -236,7 +257,7 @@ GitHub issues are a great way of keeping track of new features, bugs, and other 
 
 ## Branches
 
-Git hub is all about branches. We have haven't discussed it yet but so far we've been working only in the repo's `main` branch. When working on a feature or bug, we can create a branch and then merge it back to main when we're done
+GitHub is all about branches. We have haven't discussed it yet but so far we've been working only in the repo's `main` branch. When working on a feature or bug, we can create a branch and then merge it back to main when we're done
 
 ![](images/clipboard-108549352.png){fig-align="center" width="592"}
 
@@ -251,6 +272,7 @@ Projects are based on Issues, which makes it easier to manage our work
 ![](images/clipboard-3740672826.png){fig-align="center" width="825"}
 
 ## Resources
+
 ::: {layout="[[-0.5], [0.5], [-0.5]]"}
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/ "GitHub + RStudio")
 
@@ -262,3 +284,5 @@ Projects are based on Issues, which makes it easier to manage our work
 
 -   [MARS team](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 :::
+
+# Questions

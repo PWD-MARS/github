@@ -159,12 +159,14 @@ Jon Bryant
 </section>
 <section id="why-gitgithub-1" class="slide level2">
 <h2>Why Git/GitHub</h2>
+<div>
 <ul>
-<li><p>Changes in one line of code can drastically impact other areas in non-obvious ways.</p></li>
-<li><p>We generally prototype portions of our code without impacting what is already working in production.</p></li>
-<li><p>We want to have a historical record of changes to provide insight for others and our future selves.</p></li>
-<li><p>We need more than one person to be able to work on a document at once.</p></li>
+<li class="fragment"><p>Changes in one line of code can drastically impact other areas in non-obvious ways.</p></li>
+<li class="fragment"><p>We want to have a historical record of changes to provide insight for others and our future selves.</p></li>
+<li class="fragment"><p>We generally prototype portions of our code without impacting what is already working in production.</p></li>
+<li class="fragment"><p>We need more than one person to be able to work on a document at once.</p></li>
 </ul>
+</div>
 </section>
 <section id="mostly-we-want-to-avoid" class="slide level2">
 <h2>Mostly we want to avoid</h2>
@@ -198,7 +200,7 @@ Jon Bryant
 <ul>
 <li><p>Open source software for managing software projects</p></li>
 <li><p>Very low level - Only available through CLI (i.e.&nbsp;Terminal)</p></li>
-<li><p>Tracks changes to files</p></li>
+<li><p>Provide core functions (tracking changes, commits, pull/push, etc)</p></li>
 </ul>
 </section>
 <section id="github" class="slide level2">
@@ -210,7 +212,7 @@ Jon Bryant
 </div>
 <ul>
 <li><p>Web-based platform built on top of Git with an easier to use interface, collaboration and issue tracking system, etc.</p></li>
-<li><p>Free service with enterprise-level paid options</p></li>
+<li><p>Widely used across the industry</p></li>
 <li><p>A single source of truth</p></li>
 </ul>
 </section>
@@ -282,7 +284,7 @@ Jon Bryant
 <p>After we make changes to files located in a repo that Git is tracking, we can commit those changes.</p>
 <ul>
 <li><span style="font-size: 0.8em;">A commit is a snapshot of everything in the local repo that has changed since the last commit.</span></li>
-<li><span style="font-size: 0.8em;">We want to make commits around logical units of change as they should tell a story of how the files have changed.</span></li>
+<li><span style="font-size: 0.8em;">We want to make commits around logical units of change as they should tell a story of how the project has developed.</span></li>
 <li><span style="font-size: 0.8em;">There is no prescribed amount of work or frequency regarding when to commit, but when enough work has been done that it’s worth it to capture that snapshot in time.</span></li>
 </ul>
 </section>
@@ -316,7 +318,7 @@ Jon Bryant
 <ul>
 <li><p>Large files</p></li>
 <li><p>Sensitive files</p></li>
-<li><p>R Package related files</p></li>
+<li><p>Package/Library-related files</p></li>
 </ul>
 </section>
 <section id="gitignore" class="slide level2">
@@ -345,7 +347,7 @@ Jon Bryant
 <p>People usually say “Push/Pull”, but I’m being very specific in ordering it as Pull/Push. We always want to pull before we push.</p>
 <p>As a reminder:</p>
 <dl>
-<dt>Push</dt>
+<dt>Pull</dt>
 <dd>
 <p>Pull changes from the server (remote) that are missing locally.</p>
 </dd>
@@ -358,21 +360,24 @@ Jon Bryant
 <section id="why-pull-before-push" class="slide level2">
 <h2>Why Pull before Push?</h2>
 <p>What happens in the following scenario:</p>
+<div>
 <ol type="1">
-<li>I clone a repo to work on Feature A</li>
-<li>I start working on Feature A</li>
-<li>Farshad clones the repo to fix Bug B</li>
-<li>Farshad is a coding wizard and pushes the fix for Bug B the same day</li>
-<li>Two days later I finish Feature A and want to push it to the remote.</li>
+<li class="fragment">Jon clones a repo to work on Feature A</li>
+<li class="fragment">Farshad clones the repo to fix Bug B</li>
+<li class="fragment">Farshad is a coding wizard and pushes the fix for Bug B the same day</li>
+<li class="fragment">Two days later, Jon finish Feature A and want to push it to the remote.</li>
 </ol>
+</div>
 </section>
 <section id="merge-conflict" class="slide level2">
 <h2>Merge conflict</h2>
+<div>
 <p>If Farshad’s fix for Bug B changes the code enough that it now conflicts with code of my new feature, if I try to push it to the remote, I will get denied because of conflicts.</p>
 <ul>
-<li><p>This means I need to go back, pull the changes from the remote, make sure my code works properly still for Feature A, and then push it to the remote.</p></li>
-<li><p>This doesn’t necessarily happen often but it’s always a best practice to avoid this by just pulling before pushing.</p></li>
+<li class="fragment"><p>This means I need to go back, pull the changes from the remote, make sure my code works properly still for Feature A, and then push it to the remote.</p></li>
+<li class="fragment"><p>This doesn’t necessarily happen often but it’s always a best practice to avoid this by just pulling before pushing.</p></li>
 </ul>
+</div>
 </section>
 <section id="pullpush-1" class="slide level2">
 <h2>Pull/Push</h2>
@@ -403,11 +408,18 @@ Jon Bryant
 </section>
 <section id="what-we-covered-today" class="slide level2">
 <h2>What we covered today</h2>
+<div class="center">
 <ul>
 <li><p>Why Git/GitHub</p></li>
 <li><p>Basics of Git</p></li>
-<li><p>End to End workflow</p></li>
+<li><p>The complete workflow from start to finish</p>
+<ul>
+<li><p>Create/Clone Repositories</p></li>
+<li><p>Commits</p></li>
+<li><p>Pull/Push</p></li>
+</ul></li>
 </ul>
+</div>
 </section></section>
 <section>
 <section id="next-time" class="title-slide slide level1 center">
@@ -428,6 +440,17 @@ Jon Bryant
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/gh_issues.PNG" class="quarto-figure quarto-figure-center" width="850"></p>
+</figure>
+</div>
+</section>
+<section id="issues-1" class="slide level2">
+<h2>Issues</h2>
+<div style="font-size: 0.8em;">
+<p>In the process of creating this presentation, I created an issue for the Posit/Quarto team:</p>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/clipboard-3137073766.png" class="quarto-figure quarto-figure-center" width="800"></p>
 </figure>
 </div>
 </section>
@@ -455,7 +478,7 @@ Jon Bryant
 </section>
 <section id="branches-1" class="slide level2">
 <h2>Branches</h2>
-<p>Git hub is all about branches. We have haven’t discussed it yet but so far we’ve been working only in the repo’s <code>main</code> branch. When working on a feature or bug, we can create a branch and then merge it back to main when we’re done</p>
+<p>GitHub is all about branches. We have haven’t discussed it yet but so far we’ve been working only in the repo’s <code>main</code> branch. When working on a feature or bug, we can create a branch and then merge it back to main when we’re done</p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="images/clipboard-108549352.png" class="quarto-figure quarto-figure-center" width="592"></p>
@@ -502,8 +525,11 @@ Jon Bryant
 </div>
 </div>
 </div>
-
 </section></section>
+<section id="questions" class="title-slide slide level1 center">
+<h1>Questions</h1>
+
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
