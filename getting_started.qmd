@@ -286,4 +286,4 @@ Projects are based on Issues, which makes it easier to manage our work
 -   [MARS team](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 :::
 
-# Questions
+# Q&A
