@@ -21,6 +21,8 @@ editor: visual
 
 -   Resources
 
+-   Q&A
+
 ## Why Git/GitHub
 
 We already have tools for tracking changes and collaboration for text-based documents. Why do we need version control solutions like GitHub?
@@ -34,7 +36,7 @@ We already have tools for tracking changes and collaboration for text-based docu
 
 -   We want to have a historical record of changes to provide insight for others and our future selves.
 
--   We generally prototype portions of our code without impacting what is already working in production.
+-   We want to be able to prototype portions of our code without impacting what is already working in production.
 
 -   We need more than one person to be able to work on a document at once.
 :::
@@ -119,7 +121,7 @@ For RStudio users, I recommend creating a new project using Version Control. We 
 
 ## Commit
 
-After we make changes to files located in a repo that Git is tracking, we can commit those changes.
+After we make changes to files in a local repo that Git is tracking, we can commit those changes.
 
 -   [A commit is a snapshot of everything in the local repo that has changed since the last commit.]{style="font-size: 0.8em;"}
 -   [We want to make commits around logical units of change as they should tell a story of how the project has developed.]{style="font-size: 0.8em;"}
@@ -156,7 +158,7 @@ Sometimes, there are files within a directory that we don't want git to track:
 ::: {style="font-size: 0.8em;"}
 When we create a new project in RStudio using version control (in our case GitHub), it automatically creates a `.gitignore` file with a few key files that don't need to be tracked by git.
 
-You add files to git ignore manually or most IDEs will have a UI interface to add them to `.gitignore`
+You can add files to `gitignore` manually or most IDEs will have a UI interface to add them to `.gitignore`
 
 ![](images/clipboard-202858703.png){fig-align="center"}
 :::
@@ -189,13 +191,13 @@ What happens in the following scenario:
 1.  Jon clones a repo to work on Feature A
 2.  Farshad clones the repo to fix Bug B
 3.  Farshad is a coding wizard and pushes the fix for Bug B the same day
-4.  Two days later, Jon finish Feature A and want to push it to the remote.
+4.  Two days later, Jon finishes Feature A and wants to push it to the remote.
 :::
 
 ## Merge conflict
 
 ::: incremental
-If Farshad's fix for Bug B changes the code enough that it now conflicts with code of my new feature, if I try to push it to the remote, I will get denied because of conflicts.
+If Farshad's fix for Bug B changes the code enough that it now conflicts with code of my new feature, I will get denied because of these conflicts.
 
 -   This means I need to go back, pull the changes from the remote, make sure my code works properly still for Feature A, and then push it to the remote.
 
