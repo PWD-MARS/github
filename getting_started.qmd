@@ -39,6 +39,8 @@ We already have tools for tracking changes and collaboration for text-based docu
 -   We want to be able to prototype portions of our code without impacting what is already working in production.
 
 -   We need more than one person to be able to work on a document at once.
+
+-   Easily rollback changes if something breaks.
 :::
 
 ## Mostly we want to avoid
